@@ -1,7 +1,7 @@
 import re
 def alphabets(string):
     charRe = re.compile(r'[^a-b]')   # Python program for all strings containing at least one occurence of aa and bb
-    string = charRe.search(string)   # Regular expression : ((a+b)*aa(a+b)*bb(a+b)*) + ((a+b)*bb(a+b)*aa(a+b)*)
+    string = charRe.search(string)   # Regular expression: ((a+b)*aa(a+b)*bb(a+b)*) + ((a+b)*bb(a+b)*aa(a+b)*)
     return not bool(string)
 
 word = input("Enter string: ")
