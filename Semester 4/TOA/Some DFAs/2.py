@@ -1,7 +1,7 @@
 import re
 def alphabets(string):
     charRe = re.compile(r'[^a-b]')     # Python program for all strings starting or ending with "aa"
-    string = charRe.search(string)     # Regular expression : (aa.(a+b)*) + ((a+b)*.aa)
+    string = charRe.search(string)     # Regular expression: (aa.(a+b)*) + ((a+b)*.aa)
     return not bool(string)
 
 word = input("Enter string: ")
